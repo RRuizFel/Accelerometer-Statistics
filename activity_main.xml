@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accelerometer"
+            android:textSize="40sp"
+            android:layout_gravity="center_horizontal"
+            android:padding="20sp"/>
+
+        <TextView
+            android:id="@+id/textViewX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X-axis: "
+            android:textSize="22sp"
+            android:layout_gravity="center_horizontal"
+            android:padding="20sp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/textViewY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Y-axis: "
+            android:textSize="22sp"
+            android:layout_gravity="center_horizontal"
+            android:padding="20sp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/textViewZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Z-axis: "
+            android:textSize="22sp"
+            android:layout_gravity="center_horizontal"
+            android:padding="20sp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/textViewSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MPH: "
+            android:textSize="22sp"
+            android:layout_gravity="center_horizontal"
+            android:padding="20sp"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:layout_marginTop="32dp"
+            android:textSize="25sp"
+            android:layout_gravity="center_horizontal"
+            android:padding="20sp"
+            android:onClick="startSensor"/>
+
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop/Analysis"
+            android:layout_marginTop="30sp"
+            android:textSize="25sp"
+            android:layout_gravity="center_horizontal"
+            android:padding="20sp"
+            android:onClick="stopSensor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Analysis"
+            android:textSize="40sp"
+            android:layout_gravity="center_horizontal"
+            android:padding="20sp"/>
+
+        <TextView
+            android:id="@+id/textViewAverage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Average: "
+            android:textSize="22sp"
+            android:layout_gravity="center_horizontal"
+            android:padding="20sp"
+            android:layout_marginTop="16dp"/>
+        <TextView
+            android:id="@+id/textViewMPHAverage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MPH Average: "
+            android:textSize="22sp"
+            android:layout_gravity="center_horizontal"
+            android:padding="20sp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/textViewMaximum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maximum: "
+            android:textSize="22sp"
+            android:layout_gravity="center_horizontal"
+            android:padding="20sp"
+            android:layout_marginTop="16dp"/>
+        <TextView
+            android:id="@+id/textViewMPHMaximum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MPH Maximum: "
+            android:textSize="22sp"
+            android:layout_gravity="center_horizontal"
+            android:padding="20sp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/textViewMinimum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Minimum: "
+            android:textSize="22sp"
+            android:layout_gravity="center_horizontal"
+            android:padding="20sp"
+            android:layout_marginTop="16dp"/>
+        <TextView
+            android:id="@+id/textViewMPHMinimum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MPH Minimum: "
+            android:textSize="22sp"
+            android:layout_gravity="center_horizontal"
+            android:padding="20sp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/textViewVariance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Variance: "
+            android:textSize="22sp"
+            android:layout_gravity="center_horizontal"
+            android:padding="20sp"
+            android:layout_marginTop="16dp"/>
+        <TextView
+            android:id="@+id/textViewMPHVariance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MPH Variance: "
+            android:textSize="22sp"
+            android:layout_gravity="center_horizontal"
+            android:padding="20sp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/textViewStandardDeviation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Standard Deviation: "
+            android:textSize="22sp"
+            android:layout_gravity="center_horizontal"
+            android:padding="20sp"
+            android:layout_marginTop="16dp"/>
+        <TextView
+            android:id="@+id/textViewMPHStandardDeviation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MPH Standard Deviation: "
+            android:textSize="22sp"
+            android:layout_gravity="center_horizontal"
+            android:padding="20sp"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+</ScrollView>
